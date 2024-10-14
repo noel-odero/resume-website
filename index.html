@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noel Odero's Resume</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <h3 class="logo" href="index.html">NoelSpace</h3>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+      <ul class="links ">
+        <li>
+          <a href="#home">home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#skills">skills</a>
+        </li>
+        <li>
+          <a href="#projects">projects</a>
+        </li>
+        <li>
+          <a href="#contact">contact</a>
+        </li>
+      </ul>
+
+      </div>
+    </nav>
+    <!-- Main content -->
+     <main>
+      <!-- Home section -->
+      <section class="home" id="home">
+        <div class="img-container">
+          <img src="./noel-headshot.jpg" alt="Noel" class="profile-photo" />
+        </div>
+        <div class="home-content">
+          <h1>Noel Odero</h1>
+          <p>Web Developer | Tech Enthusiast | Political Justice Advocate</p>
+
+        </div>
+      </section>
+      <!-- End of home section -->
+      <!-- About section -->
+      <section class="about" id="about">
+       <div class="about-header">
+        <h2>About me</h2>
+       </div>
+       <div class="hire-me">
+        <p>
+          I am a passionate web developer with experience in HTML, CSS, and JavaScript.
+          I love building responsive and interactive web applications that focus on
+          simplicity, usability, and accessibility.
+        </p>
+        <div id="skills" class="skills">
+          <!-- Skill Set with Progress Bars -->
+          <div class="skill-set">
+            <p>HTML5</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+
+            <p>CSS3</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+
+            <p>Git & GitHub</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+
+            <p>Responsive Design</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 88%"></div>
+            </div>
+
+            <p>Python</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+
+            <p>Bash scripting</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 83%"></div>
+            </div>
+
+          </div>
+        </div>
+       </div>
+      </section>
+      <!-- End of about section -->
+       <!-- Skills section -->
+
+      <!-- end of skills section -->
+      <!-- projects section -->
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="slider">
+            <div class="slide active">
+                <img src="./project1.png" alt="Counter" data-description="Counter - This is a simple counter web application that allows users to increase, decrease, or reset a displayed value. It dynamically updates the displayed counter and its color content based on user interractions" />
+                <p>Counter</p>
+            </div>
+            <div class="slide">
+                <img src="./project2.png" alt="Reviews" data-description="Reviews -  carousel of reviews with a button that generates random reviews." />
+                <p>Reviews</p>
+            </div>
+            <div class="slide">
+                <img src="./project4.png" alt="Modals" data-description="Modals - This project demonstrates a basic implementation of a modal in a web page. The modal pops up when the user clicks the Open Modal button and can be closed by clicking the close (X) button.  " />
+                <p>Modal</p>
+            </div>
+            <div class="slide">
+              <img src="./project5.png" alt="FAQ" data-description="FAQ - This project creates a frequently asked questions page which educates users about a business and drives traffic to the website through organic search results.  " />
+              <p>Modal</p>
+          </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+        <!-- Modal for Project Descriptions -->
+        <div id="projectModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <h2 id="modalTitle">Project Title</h2>
+              <p id="modalDescription">Project description will go here.</p>
+          </div>
+        </div>
+      <!-- end of projects section -->
+
+
+
+    </section>
+    <!-- contacts section -->
+     <section class="contact" id="contact">
+      <h2>Reach out!</h2>
+      <p>Feel free to reach out via email or connect with me on my social media platforms:</p>
+
+      <ul class="social-icons">
+        <li>
+          <a href="mailto:anoel.odero@gmail.com">
+              <i class="fas fa-envelope"></i> Email
+          </a>
+      </li>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100095046360025">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/miss__noel">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href ="https://www.instagram.com/__miss.noel/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/anjeline-noel-odero-456841265/">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+
+      </ul>
+     </section>
+
+
+
+
+     </main>
+
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
