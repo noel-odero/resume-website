@@ -12,12 +12,12 @@ This is a fully responsive personal resume website built using pure HTML, CSS, a
 ## Project Overview
 This project is a responsive resume website. The website is mobile-friendly and uses custom CSS for styling. It incorporates interactive elements using JavaScript to enhance user experience. The website will showcase the following sections:
 
-About Me
-Skills
-Work Experience
-Education
-Projects
-Contact Information
+- About Me
+- Skills
+- Work Experience
+- Education
+- Projects
+- Contact Information
 
 ## Features
 - Responsive Design: The website adapts to different screen sizes (desktop, tablet, and mobile) using media queries and relative units like EM and percentages.
