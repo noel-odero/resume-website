@@ -314,6 +314,9 @@ align-items: center;
   align-items: baseline;
   margin-left: 40rem;
 }
+.about-header h2{
+  color:#222;
+}
 .hire-me{
   display: flex;
   justify-content:space-evenly;
