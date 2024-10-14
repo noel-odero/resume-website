@@ -112,46 +112,33 @@
        </div>
       </section>
       <!-- End of about section -->
-       <!-- Skills section -->
 
-      <!-- end of skills section -->
       <!-- projects section -->
       <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="slider">
-            <div class="slide active">
-                <img src="./project1.png" alt="Counter" data-description="Counter - This is a simple counter web application that allows users to increase, decrease, or reset a displayed value. It dynamically updates the displayed counter and its color content based on user interractions" />
-                <p>Counter</p>
+        <h2 class="project">Projects Showcase</h2>
+        <div class="project-container">
+          <a id="project-link" href="https://noel-odero.github.io/Counter/" target="_blank">
+            <img id="project-img" src="./project1.png" alt="Counter">
+            <h4 id="project-name">Counter</h4>
+          </a>
+          <p id="project-desc">This is a simple counter web application that allows users to increase, decrease, or reset a displayed value.</p>
+
+          <div class="button-container">
+            <div class="pre-next">
+              <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+
+              <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
-            <div class="slide">
-                <img src="./project2.png" alt="Reviews" data-description="Reviews -  carousel of reviews with a button that generates random reviews." />
-                <p>Reviews</p>
-            </div>
-            <div class="slide">
-                <img src="./project4.png" alt="Modals" data-description="Modals - This project demonstrates a basic implementation of a modal in a web page. The modal pops up when the user clicks the Open Modal button and can be closed by clicking the close (X) button.  " />
-                <p>Modal</p>
-            </div>
-            <div class="slide">
-              <img src="./project5.png" alt="FAQ" data-description="FAQ - This project creates a frequently asked questions page which educates users about a business and drives traffic to the website through organic search results.  " />
-              <p>Modal</p>
+            <button class="random-btn">Random</button>
           </div>
         </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+       <!-- end of projects section -->
 
-        <!-- Modal for Project Descriptions -->
-        <div id="projectModal" class="modal">
-          <div class="modal-content">
-              <span class="close" onclick="closeModal()">&times;</span>
-              <h2 id="modalTitle">Project Title</h2>
-              <p id="modalDescription">Project description will go here.</p>
-          </div>
-        </div>
-      <!-- end of projects section -->
-
-
-
-    </section>
+      </section>
     <!-- contacts section -->
      <section class="contact" id="contact">
       <h2>Reach out!</h2>
@@ -162,7 +149,7 @@
           <a href="mailto:anoel.odero@gmail.com">
               <i class="fas fa-envelope"></i> Email
           </a>
-      </li>
+        </li>
         <li>
           <a href="https://www.facebook.com/profile.php?id=100095046360025">
             <i class="fab fa-facebook"></i>
