@@ -162,7 +162,7 @@ Navbar
 ===============
 */
 nav {
-  background: var(--clr-white);
+  /* background: var(--clr-white); */
   box-shadow: var(--light-shadow);
   position: fixed;
   /* top: 0;
@@ -170,7 +170,6 @@ nav {
   width: 100%;
   z-index: 1000;
   padding: 0;
-
 }
 .nav-header {
   display: flex;
@@ -264,75 +263,71 @@ nav {
 /* Home */
 .home {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   flex-direction: row;
   padding: 4rem 0;
   background-color: var(--clr-grey-10);
   text-align: center;
-  width:100%;
+  width: 100%;
   height: 100vh;
 }
 
-
-.home img{
-
-    border-radius: 50%;
-    width: 220px;
-    height: 220px;
-
+.home img {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
 }
 
-.img-container{
-display: flex;
-align-items: center;
+.img-container {
+  display: flex;
+  align-items: center;
 }
 
-.home-content{
+.home-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
-.home-content h1{
+.home-content h1 {
   color: #222;
 }
 
 /* About */
 
-.about{
-  width:100%;
+.about {
+  width: 100%;
   height: 100vh;
   /* display: flex; */
   /* background-color: #222; */
 }
-.about-header{
+.about-header {
   display: flex;
-  color:#222;
-  align-items: baseline;
-  margin-left: 40rem;
+  color: #222;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-.about-header h2{
-  color:#222;
+.about-header h2 {
+  color: #222;
   padding: 1rem;
 }
-.hire-me{
+.hire-me {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   flex-direction: row;
   margin-top: 4rem;
-
+  align-items: center;
 }
-.hire-me p{
-
-  width: 50vh
-};
-
+.hire-me p {
+  flex: 1;
+}
 
 /* Skills Section */
-.skills {
-  margin-top: 50px;
+.hire-me .skills {
+  flex: 1;
   text-align: center;
+  width: 100%;
 }
 
 /* Progress Bars */
@@ -340,7 +335,7 @@ align-items: center;
   text-align: left;
   margin: 0 auto;
   max-width: 600px;
-  height: 5px;
+  /* height: 5px; */
 }
 
 .progress-bar {
@@ -356,8 +351,6 @@ align-items: center;
   height: 100%;
   border-radius: 10px;
 }
-
-
 
 /* Container for the project display */
 .project-container {
@@ -459,5 +452,30 @@ align-items: center;
   filter: blur(5px);
 }
 
+@media screen and (max-width: 640px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
 
-.contact
+  .home img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+  }
+  nav {
+    background-color: white;
+  }
+
+  .hire-me {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .hire-me p {
+    width: 96%;
+    text-align: center;
+  }
+}
