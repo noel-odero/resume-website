@@ -143,6 +143,7 @@ p {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
+  /* overflow: hidden; */
 }
 @media screen and (min-width: 992px) {
   .section-center {
@@ -154,6 +155,7 @@ main {
   display: grid;
   place-items: center;
   padding: 20px;
+  overflow:auto;
 }
 
 /*
@@ -220,7 +222,7 @@ nav {
   transition: var(--transition);
 }
 .show-links {
-  height: 10rem;
+  height: 12rem;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -543,7 +545,8 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* padding: 2rem 0; */
   }
 
   .home img {
@@ -584,7 +587,13 @@ nav {
     padding: 0;
     margin-bottom: 10rem;
 
+
   }
+  .project-container {
+    width: 100%; /* Ensure project containers fit within the screen */
+    padding: 10px; /* Adjust padding */
+  }
+
 }
 
 .contact{
@@ -645,4 +654,16 @@ nav {
     color: var(--clr-primary-7);
   }
 
+}
+.social-icons {
+  display: flex;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+
+}
+.social-icons a:hover {
+  color: var(--clr-primary-7);
 }
