@@ -222,7 +222,7 @@ nav {
   transition: var(--transition);
 }
 .show-links {
-  height: 12rem;
+  height: 14rem;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -666,4 +666,67 @@ nav {
 }
 .social-icons a:hover {
   color: var(--clr-primary-7);
+}
+
+
+/* education */
+
+.education {
+  padding: 3rem 0;
+  background-color: var(--clr-grey-9);
+  color: var(--clr-grey-1);
+  margin-bottom: 2rem;
+}
+
+.education h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--clr-primary-5);
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.education-item {
+  background: var(--clr-white);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+.education-item h3 {
+  color: var(--clr-primary-1);
+  margin-bottom: 0.5rem;
+}
+
+.education-item p {
+  margin: 0.25rem 0;
+  color: var(--clr-grey-5);
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+  .education-item {
+    padding: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .education h2 {
+    font-size: 1.5rem;
+  }
+
+  .education-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .education-item p {
+    font-size: 0.9rem; 
+  }
 }
