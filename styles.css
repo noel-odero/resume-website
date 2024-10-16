@@ -170,6 +170,7 @@ nav {
   width: 100%;
   z-index: 1000;
   padding: 0;
+  background-color: white;
 }
 .nav-header {
   display: flex;
@@ -350,6 +351,44 @@ nav {
   background-color: #28a745; /* Green color for progress */
   height: 100%;
   border-radius: 10px;
+
+/* Skills Section */
+.hire-me .skills {
+  flex: 1;
+  text-align: center;
+  width: 100%;
+}
+
+/* Progress Bars */
+.skill-set {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 600px;
+  /* height: 5px; */
+}
+
+.progress-bar {
+  background-color: #444;
+  border-radius: 5px;
+  height: 5px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.progress {
+  background-color: #28a745; /* Green color for progress */
+  height: 100%;
+  border-radius: 10px;
+  -webkit-transition: all 2s ease-out 0s;
+  -moz-transition: all 2s ease-out 0s;
+  -ms-transition: all 2s ease-out 0s;
+  -o-transition: all 2s ease-out 0s;
+  transition: all 2s ease-out 0s;
+
+}
+
+
+
 }
 
 /* Container for the project display */
@@ -365,6 +404,15 @@ nav {
   transition: background-color 0.3s ease-in-out, transform 0.5s ease;
 }
 
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.project h2{
+  color: #222;
+}
 .project-container img {
   width: 100%;
   max-width: 300px;
@@ -479,3 +527,5 @@ nav {
     text-align: center;
   }
 }
+
+
