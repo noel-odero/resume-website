@@ -222,7 +222,7 @@ nav {
   transition: var(--transition);
 }
 .show-links {
-  height: 14rem;
+  height: 15rem;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -727,6 +727,6 @@ nav {
   }
 
   .education-item p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
 }
