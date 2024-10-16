@@ -403,6 +403,9 @@ nav {
   background-color: #fff;
   transition: background-color 0.3s ease-in-out, transform 0.5s ease;
 }
+.project-container h4 {
+  color: #222;
+}
 
 .project {
   display: flex;
