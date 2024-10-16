@@ -212,7 +212,7 @@ nav {
   padding-left: 1.5rem;
 }
 .social-icons {
-  display: none;
+  /* display: none; */
 }
 .links {
   height: 0;
@@ -271,6 +271,33 @@ nav {
   text-align: center;
   width: 100%;
   height: 100vh;
+}
+
+.name {
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+}
+.name:hover {
+  color: var(--clr-primary-7);
+  letter-spacing: 5px;
+  transform: scale(1.1);
+  opacity: 0.8;;
+}
+.description {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+
+  }
+  100% {
+    opacity: 1;
+  }
+
 }
 
 .home img {
@@ -348,7 +375,7 @@ nav {
 }
 
 .progress {
-  background-color: #28a745; /* Green color for progress */
+  background-color: var(--clr-primary-5);
   height: 100%;
   border-radius: 10px;
 
@@ -392,6 +419,14 @@ nav {
 }
 
 /* Container for the project display */
+
+.projects {
+  height: 70vh;
+  /* background-color: red; */
+  padding: 0;
+  margin-bottom: 8rem;
+
+}
 .project-container {
   text-align: center;
   max-width: 600px;
@@ -529,6 +564,85 @@ nav {
     width: 96%;
     text-align: center;
   }
+
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+
+  }
+  .social-icons a:hover {
+    color: var(--clr-primary-7);
+  }
+
+  .projects {
+    height: 70vh;
+    /* background-color: red; */
+    padding: 0;
+    margin-bottom: 10rem;
+
+  }
 }
 
+.contact{
+  height: 50vh;
 
+  margin-top: 0;
+  padding-bottom: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.work-together h2{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: #222;
+}
+
+.reach-out {
+
+  margin: 3rem;
+
+
+}
+
+.social-icons{
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-icons a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  /* border-radius: 50%; */
+  font-size: 18px;
+  /* color: #646f87; */
+  /* background-color: rgba(41, 54, 81, 0.07); */
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .social-icons {
+    display: flex;
+  }
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+
+  }
+  .social-icons a:hover {
+    color: var(--clr-primary-7);
+  }
+
+}
